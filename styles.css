@@ -1,0 +1,107 @@
+/* style sheet */
+
+/* Review URL Later */
+body{
+	background-image: url("photo.png");
+	background-size: cover;
+}
+/* Chrome Extension lead tracker */
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	min-width: 400px;
+	
+}
+#container-extension{
+	border-radius: 5px;
+	background: rgba(255, 255, 255, 0.10);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(15.0px);
+	-webkit-backdrop-filter: blur(15.0px);
+	border: 1px solid rgba(255, 255, 255, 0.20);	
+}
+#input-el{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 5px;
+	border: 1px solid #5f9335;
+	margin-bottom: 4px;
+	border-radius: 5px 5px 0px 0px;
+	color:#5f9335;
+	font-weight: bold;
+}
+#message-el{
+	padding: 5px 10px;
+	margin: 3px 5px;
+	color: white;
+	font-weight: bold;
+}
+#input-btn, #tab-btn{
+	background: #5f9335;
+	color: white;
+	padding: 10px 20px 10px 20px;
+	font-weight: bold;
+	border-radius: 3px;
+	border: 1px solid white;
+}
+#delete-btn{
+	background: white;
+	color: #5f9335;
+	padding: 10px 20px 10px 20px;
+	font-weight: bold;
+	border-radius: 3px;
+	border: 1px solid #5f9335;
+}
+#yes-btn, #no-btn{
+	background: #5f9335;
+	color: white;
+	padding: 3px 10px;
+	font-weight: bold;
+	border-radius: 3px;
+	margin: 0px 5px;
+	display: none;
+}
+.remove-btn{
+	background: white;
+	color: #5f9335;
+	padding: 2px 6px 2px 6px;
+	font-weight: bold;
+	border-radius: 3px;
+	border: 1px solid #5f9335;
+	margin-left: 5px;
+	float: right;
+	
+}
+ol{
+	margin-top: 10px;
+	list-style: none;
+	counter-reset: li;
+	padding-left: 28px;
+}
+li{
+	margin-top: 5px;
+	
+	counter-increment: li;
+	border-bottom: 2px solid #5f9335;
+	padding: 0px 0px 8px 0px;
+}
+li a{
+	color: white;
+	padding-left: 5px;
+	margin: 0px 30px 0px 0px;
+	word-wrap: break-word;
+	z-index: -100;
+}
+li a:hover{
+	color: #5f9335;
+}
+li::before {
+	content: counter(li);
+	color: white;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em;
+	background: #5f9335;
+	border-radius:50%;
+	text-align:center;
+ }
+
