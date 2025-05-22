@@ -1,7 +1,7 @@
 {
 	"manifest_version": 3,
 	"name": "Review URL Later",
-	"version": "1.0.1",
+	"version": "1.5.0",
 	"description": "Use this chrome extension to save URLs that you want to review later.",
 	"permissions": [
 		"tabs"
@@ -9,8 +9,14 @@
 	"action": {
 		"default_popup": "index.html",
 		"default_icon": "icon.png"
-	}
-	//1.0.0 initial release
-	//1.0.1 visual updates
+	},
 	
+	"icons": {
+		"16": "icon16.png",
+		"48": "icon32.png",
+		"48": "icon48.png",
+		"128": "icon128.png"
+	}
+	
+
 }

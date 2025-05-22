@@ -9,23 +9,44 @@
 </head>
 
 <body>
+
 <header>
 </header>
+
 <!-- Chrome Extension Review URL Later -->
 <div id="container-extension">
-<div id="section-container">
-	<input type="text" id="input-el">
-	<button id="input-btn">SAVE INPUT</button>
-	<button id="tab-btn">SAVE TAB</button>
-	<button id="delete-btn">CLEAR LIST</button>
-	<p id="message-el"></p>
-	<p>
-	<button id="yes-btn">YES</button>
-	<button id="no-btn">NO</button>
-	</p>
-	<ol id="savedul-el"></ol>
+	<div id="section-container">
+		<input type="text" id="input-el">
+		
+		<div>
+			<button class="btn-color" id="btn-input">SAVE INPUT</button>
+			<button class="btn-color" id="btn-tab">SAVE TAB</button>
+			
+			<button class="btn-color-white"id="btn-delete">CLEAR LIST</button>
+			<button class="btn-color" id="btn-options">...</button>
+		</div>
+		
+		<div class="hidden" id="container-options">
+			<button class="btn-color" id="btn-rearrange-items">Rearrange items</button>
+			<button class="btn-color" id="btn-clipboard">COPY All<br><span class="el-size">(Clipboard)</span></button>
+		</div>
+		
+		<div>
+			<p id="message-el">Your list of saved items:</p>
+		</div>
+		
+		
+		
+		<p>
+			<button class="btn-color" id="btn-yes">YES</button>
+			<button class="btn-color" id="btn-no">NO</button>
+		</p>
+		
+		<ol id="savedul-el"></ol>
+		
+	</div>
 </div>
-</div>
+
 <script src="js.js"></script>
 <br>
 <footer>
